@@ -11,10 +11,12 @@ URL:		http://www.fluendo.com/elisa/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Elisa is a project to create an open source cross platform media center solution
+Elisa is a project to create an open source cross platform media
+center solution
 
 %description -l pl
-Elisa is a project to create an open source cross platform media center solution
+Elisa is a project to create an open source cross platform media
+center solution
 
 %prep
 %setup -q
