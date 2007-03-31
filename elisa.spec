@@ -3,7 +3,7 @@ Summary(pl):	Media center
 Name:		elisa
 Version:	0.1.4.2
 Release:	0.1
-License:	- (enter GPL/GPL v2/LGPL/BSD/BSD-like/other license name here)
+License:	GPL
 Group:		Applications
 Source0:	http://www.fluendo.com/elisa/downloads/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	fe9bfb723c8565e62ebf4d2e21588aab
