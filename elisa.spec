@@ -8,6 +8,8 @@ Group:		Applications
 Source0:	http://www.fluendo.com/elisa/downloads/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	fe9bfb723c8565e62ebf4d2e21588aab
 URL:		http://www.fluendo.com/elisa/
+BuildRequires:	python-setuptools
+BuildRequires:	python-Twisted
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,10 +29,11 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
-find $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name} -name "*.py" -exec rm {} \;
+
+%py_postclean
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
