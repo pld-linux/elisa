@@ -1,5 +1,5 @@
 Summary:	Media center
-Summary(pl):	Media center
+Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
 Version:	0.1.4.2
 Release:	0.1
@@ -14,11 +14,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Elisa is a project to create an open source cross platform media
-center solution
+center solution.
 
-%description -l pl
-Elisa is a project to create an open source cross platform media
-center solution
+%description -l pl.UTF-8
+Elisa to projekt stworzenia wieloplatformowego, mającego otwarte
+źródła centrum multimedialnego.
 
 %prep
 %setup -q
