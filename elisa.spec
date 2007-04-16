@@ -17,8 +17,8 @@ Elisa is a project to create an open source cross platform media
 center solution.
 
 %description -l pl.UTF-8
-Elisa to projekt stworzenia wieloplatformowego, mającego otwarte
-źródła centrum multimedialnego.
+Elisa jest projektem stworzenia wieloplatformowego centrum
+multimedialnego o otwartych źródłach.
 
 %prep
 %setup -q
