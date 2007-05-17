@@ -11,6 +11,7 @@ URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-setuptools
 BuildRequires:	python-TwistedCore
 Requires:	pigment >= 0.1.5
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,11 +26,11 @@ multimedialnego o otwartych źródłach.
 %setup -q
 
 %build
-CFLAGS="%{rpmcflags}" \
 python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
 
@@ -40,7 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc
+# COPYING contains just some notes, LICENSE.GPL includes excemption clause 
+%doc AUTHORS COPYING ChangeLog FAQ LICENSE.* NEWS README.txt
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/%{name}
 %{py_sitescriptdir}/%{name}-%{version}*
