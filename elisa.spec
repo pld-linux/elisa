@@ -7,13 +7,17 @@ License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	313ef3f1d769229c71faa646f189ed9e
+Patch0:		%{name}-no-source-files.patch
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-TwistedCore
 BuildRequires:	python-gstreamer >= 0.10.9
 BuildRequires:	python-setuptools
+Requires:	elisa-plugins-good
+Requires:	elisa-plugins-bad
 Requires:	pigment >= 0.1.5
 Requires:	python-TwistedCore
-Requires:	python-gobject
+Requires:	python-TwistedWeb
+Requires:	python-pygobject
 Requires:	python-gstreamer >= 0.10.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,6 +32,7 @@ multimedialnego o otwartych źródłach.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 python setup.py build
@@ -37,6 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/plugins
 
 %py_postclean
 
