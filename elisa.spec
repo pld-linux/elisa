@@ -14,8 +14,11 @@ BuildRequires:	python-gstreamer >= 0.10.9
 BuildRequires:	python-setuptools
 Requires:	pigment >= 0.1.5
 Requires:	pigment-python >= 0.3.5
+Requires:	python-PIL
 Requires:	python-TwistedCore >= 2.2
 Requires:	python-TwistedWeb
+Requires:	python-TwistedWeb2
+Requires:	python-coherence
 Requires:	python-cssutils
 Requires:	python-gstreamer >= 0.10.9
 Requires:	python-pygobject
