@@ -20,6 +20,7 @@ Requires:	python-cssutils
 Requires:	python-gstreamer >= 0.10.9
 Requires:	python-pygobject
 Requires:	python-setuptools
+Requires:	elisa-plugins = %{version}
 Suggests:	elisa-plugins-good
 Suggests:	elisa-plugins-bad
 BuildArch:	noarch
