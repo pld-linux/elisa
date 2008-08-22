@@ -1,12 +1,12 @@
 Summary:	Media center
 Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
-Version:	0.5.5
+Version:	0.5.6
 Release:	0.1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	f5b0c69f9aa6348664c0ffc1d177b672
+# Source0-md5:	037f8fe8bd604bebec0a3ba68c36f9f9
 #Patch0:		%{name}-no-source-files.patch
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-TwistedCore >= 2.2
@@ -41,10 +41,10 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/plugins
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/plugins
 
 %py_postclean
 
