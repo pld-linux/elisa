@@ -2,7 +2,7 @@ Summary:	Media center
 Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
 Version:	0.5.6
-Release:	0.1
+Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
@@ -17,8 +17,9 @@ Requires:	pigment-python >= 0.3.5
 Requires:	python-TwistedCore >= 2.2
 Requires:	python-TwistedWeb
 Requires:	python-cssutils
-Requires:	python-pygobject
 Requires:	python-gstreamer >= 0.10.9
+Requires:	python-pygobject
+Requires:	python-setuptools
 Suggests:	elisa-plugins-good
 Suggests:	elisa-plugins-bad
 BuildArch:	noarch
