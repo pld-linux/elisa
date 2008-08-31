@@ -1,13 +1,12 @@
 Summary:	Media center
 Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
-Version:	0.5.6
+Version:	0.5.7
 Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	037f8fe8bd604bebec0a3ba68c36f9f9
-#Patch0:		%{name}-no-source-files.patch
+# Source0-md5:	6ab12f15e85ce41f7e706bf943d04533
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-TwistedCore >= 2.2
 BuildRequires:	python-gstreamer >= 0.10.9
@@ -18,13 +17,16 @@ Requires:	python-TwistedCore >= 2.2
 Requires:	python-TwistedWeb
 Requires:	python-TwistedWeb2
 Requires:	python-coherence
-Requires:	python-cssutils
+Requires:	python-cssutils >= 0.9.5.1
+Requires:	python-encutils
 Requires:	python-gstreamer >= 0.10.9
 Requires:	python-pigment >= 0.3.5
 Requires:	python-pygobject
 Requires:	python-setuptools
-Suggests:	elisa-plugins-good
-Suggests:	elisa-plugins-bad
+Requires:	python-sqlite
+Requires:	elisa-plugins-good
+Requires:	elisa-plugins-bad
+Suggests:	elisa-plugins-ugly
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +40,6 @@ multimedialnego o otwartych źródłach.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
 python setup.py build
