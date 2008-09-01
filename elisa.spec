@@ -14,6 +14,7 @@ BuildRequires:	python-setuptools
 Requires:	pigment >= 0.1.5
 Requires:	python-PIL
 Requires:	python-TwistedCore >= 8.0.0
+Requires:	python-TwistedCore-ssl >= 8.0.0
 Requires:	python-TwistedWeb >= 8.0.0
 Requires:	python-TwistedWeb2 >= 8.0.0
 Requires:	python-coherence
