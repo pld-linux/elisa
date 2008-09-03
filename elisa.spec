@@ -22,7 +22,6 @@ Requires:	python-cssutils >= 0.9.5.1
 Requires:	python-encutils
 Requires:	python-gstreamer >= 0.10.9
 Requires:	python-pigment >= 0.3.5
-Requires:	python-pyOpenSSL
 Requires:	python-pygobject
 Requires:	python-pymetar
 Requires:	python-setuptools
@@ -30,6 +29,8 @@ Requires:	python-sqlite
 Requires:	elisa-plugins-good
 Requires:	elisa-plugins-bad
 Suggests:	elisa-plugins-ugly
+Suggests:	pymetar
+Suggests:	python-gpod
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
