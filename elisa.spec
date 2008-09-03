@@ -30,7 +30,6 @@ Requires:	elisa-plugins-good
 Requires:	elisa-plugins-bad
 Suggests:	elisa-plugins-ugly
 Suggests:	python-gpod
-Suggests:	python-pymetar
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
