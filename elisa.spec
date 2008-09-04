@@ -11,6 +11,7 @@ URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-TwistedCore >= 8.0.0
 BuildRequires:	python-gstreamer >= 0.10.9
 BuildRequires:	python-setuptools
+Requires:	gstreamer-plugins-good >= 0.10.10-1
 Requires:	pigment >= 0.1.5
 Requires:	python-PIL
 Requires:	python-TwistedCore >= 8.0.0
