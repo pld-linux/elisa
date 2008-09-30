@@ -1,18 +1,17 @@
 Summary:	Media center
 Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
-Version:	0.5.10
+Version:	0.5.12
 Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	2b8a64f8b47510ff97aff2bf1d17955f
+# Source0-md5:	e31675aaa4ac4213002d66cd10d59c51
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	python-TwistedCore >= 8.0.0
 BuildRequires:	python-gstreamer >= 0.10.9
 BuildRequires:	python-setuptools
 Requires:	gstreamer-plugins-good >= 0.10.10-1
-Requires:	pigment >= 0.1.5
 Requires:	python-PIL
 Requires:	python-TwistedCore >= 8.0.0
 Requires:	python-TwistedCore-ssl >= 8.0.0
@@ -22,7 +21,7 @@ Requires:	python-coherence
 Requires:	python-cssutils >= 0.9.5.1
 Requires:	python-encutils
 Requires:	python-gstreamer >= 0.10.9
-Requires:	python-pigment >= 0.3.5
+Requires:	python-pigment >= 0.3.8
 Requires:	python-pygobject
 Requires:	python-pymetar
 Requires:	python-setuptools
