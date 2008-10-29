@@ -2,7 +2,7 @@ Summary:	Media center
 Summary(pl.UTF-8):	Centrum multimedialne
 Name:		elisa
 Version:	0.5.16
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
