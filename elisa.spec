@@ -47,14 +47,13 @@ multimedialnego o otwartych źródłach.
 %setup -q
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/plugins
 
-python setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 #py_postclean
 
