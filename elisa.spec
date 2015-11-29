@@ -8,6 +8,7 @@ Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	5b4853a015310381cce2998bfc151642
 URL:		http://www.fluendo.com/elisa/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-TwistedCore >= 8.0.0
 BuildRequires:	python-gstreamer >= 0.10.9
 BuildRequires:	python-setuptools
